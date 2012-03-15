@@ -1,17 +1,17 @@
 // Run with cscript on windows
-var l = [];
+var lambdas = [];
 var i, j;
 
 index_grabber = function(index) {
   return function(x) {
-    WScript.Echo(index * x);
+    Console.log(index * x);
   }
 }
 
 for (i=1; i<=10; ++i) {
-  l.push(index_grabber(i));
+  lambdas.push(index_grabber(i));
 }
 
-for (j=0; j< l.length; ++j) {
-  l[j](2);
+for (j=0; j< lambdas.length; ++j) {
+  lambdas[j](2);
 }
