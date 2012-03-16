@@ -4,6 +4,6 @@ for (i=1; i <= 10; ++i) {
   lambdas.push(function(x) { console.log(i * x); });
 }
 
-for (var i = 0; i < lambdas.length; ++i) {
-  lambdas[i](2);
+for (var j = 0; j < lambdas.length; ++j) {
+  lambdas[j](2);
 }
