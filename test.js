@@ -4,7 +4,7 @@ var i, j;
 
 index_grabber = function(index) {
   return function(x) {
-    Console.log(index * x);
+    console.log(index * x);
   }
 }
 
